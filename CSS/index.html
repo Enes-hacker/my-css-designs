@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" >
+        </div>
+        <!--Hamburger Menu-->
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <!--Hamburger Menu-->
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="">Features</a>
+                </li>
+                <li>
+                    <a href="">Pricing</a>
+                </li>
+                <li>
+                    <a href="">About</a>
+                </li>
+                <li>
+                    <a href="">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Main-->
+    <div class="container">
+        <div class="description">
+            <h1>Daily Motivation</h1>
+            <p>
+                Feel lost? With Lack of motivation?
+                Want to escape the Matrix, but don't know how?
+                Join Our Community
+            </p>
+            <button class="btn-main">Learn More</button>
+
+        </div>
+        <div class="canva-image">
+            <img src="images/3.png">
+        </div>
+    </div>
+    
+
+    <!--Main-->
+
+    <!--Quote Zyzz-->
+    <div class="quotes-section">
+        <div class="zyzz">
+            <img src="images/Zyzz.jpg">
+
+        </div>
+
+        <div class="quote-caption">
+            <p>
+                Everybody one day will die and be forgotten.
+                Find a passion, form relationships, 
+                don’t be afraid to get out there and f*ck what everyone else thinks,
+                 trust me, its alot more fun that way.” – Zyzz
+            </p>
+
+        </div>
+    </div>
+
+    <!--Quote Zyzz-->
+
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function() {
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

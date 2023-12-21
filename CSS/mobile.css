@@ -1,0 +1,31 @@
+
+@media (max-width: 1024px) {
+    .description{
+        width: 100%;
+    }
+
+    .description p{
+       font-size: 1em;
+    }
+
+    .canva-image{
+        width: 100%;
+    }
+
+    .btn-main{
+        font-size: 1em;
+    }
+
+    .quote-caption{
+        padding-top: 20px;
+        width: 100%;
+        font-size: 1.5em;
+        flex-wrap: wrap;
+    }
+    .zyzz{
+        width: 100%;
+    }
+
+    
+}
+

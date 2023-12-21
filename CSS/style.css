@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Google Sans Regular";
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: #fefefe;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background: #262c3c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.logo img{
+   max-width: 10em;
+   
+}
+
+.logo img:hover{
+    cursor: pointer;
+    transform: scale(1.1); 
+
+}
+
+.hamburger{
+    display: none;
+}
+
+.nav-bar ul{
+    display: flex;
+}
+
+.nav-bar ul li a{
+    display: block;
+    color: #fefefe;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+
+.nav-bar ul li a:hover{
+    color: #11101b;
+    background: linear-gradient(0, #ff3131, #ff914d);
+    border-image-slice: 1;
+
+}
+
+.nav-bar ul li a.active {
+    color: #11101b;
+    background: linear-gradient(0, #ff3131, #ff914d);
+}
+
+@media only screen and (max-width: 1320px) {
+    header {
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    header {
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger .line{
+        width: 30px;
+        height: 3px;
+        background: #fefefe;
+        margin: 6px 0;
+    }
+
+    .nav-bar{
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #11101b;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
+    .nav-bar.active{
+        height: 450px;
+    }
+
+    .nav-bar.active ul{
+        opacity: 1;
+    }
+
+    .nav-bar ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+    }
+
+    .nav-bar ul li a{
+        margin-bottom: 12px;
+
+    }
+}
+
+/*MAIN*/
+
+/*main container div of main section with image and description*/
+.container{
+    background: #000101;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+/*main container div of main section with image and description*/
+
+/*desc part with header paragrapgh and a button*/
+.description{
+    width: 40%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.description h1, .description p {
+    padding: 1rem;
+    text-align: center;
+}
+
+.description h1{
+    font-size: 3em;
+   
+  
+    /* Create the gradient. */
+    background-image: linear-gradient(180deg, #c89116, yellow);
+    
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+  
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.description p{
+    font-size: 1.5em;
+
+}
+
+.btn-main{
+    font-size: 1.5em;
+    border: 2px solid transparent;
+    padding: .5rem;
+    border-image: linear-gradient(to left, green, lightgreen);
+    border-image-slice: 1;
+    background: #262c3c;
+    background: linear-gradient(to right, #c89116, yellow);
+}
+
+.btn-main:hover{
+    color: #fff;
+    background: #11101b;
+    cursor: pointer;
+
+}
+
+/*desc part with header paragrapgh and a button*/
+
+/*image with avatar*/
+.canva-image{
+    width: 60%;
+}
+
+.canva-image img{
+    width: 100%;
+    border: 1px solid #000101;
+    border-radius: 1rem;
+}
+/*image with avatar*/
+/*MAIN*/
+
+/**/
+.quotes-section{
+    background: #000101;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+    flex-wrap: wrap;
+    padding: 20px;
+
+  
+}
+
+.quote-caption{
+    
+    width: 60%;
+    color: white;
+    font-size: 3em;
+}
+
+.zyzz{
+    margin-top: 7rem;
+    width: 35%;
+    border: linear-gradient(to right, gold, orange);
+    border-radius: 1rem;
+ 
+}
+.zyzz img{
+    width: 100%;
+   /* aspect-ratio: 1/1;*/
+    border-radius: 1rem;
+   
+}
+/**/
+
